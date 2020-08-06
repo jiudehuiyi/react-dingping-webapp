@@ -21,6 +21,9 @@ npm install(或者使用yarn add) //安装依赖
 
 npm run start //运行在浏览器上
 
+tip:运行过程中遇到如下错误:Error: Cannot find module 'react-redux',则是react-redux模块没安装成功，安装如下:
+npm install react-redux 即可
+
 npm run build  //项目打包
 ```
 
@@ -29,7 +32,10 @@ npm run build  //项目打包
 打开my-app->src->server //进入后台服务器目录
 
 npm install (或者使用yarn add) //安装依赖
-node index.js //服务端运行
+node index.js (服务端跑在http:localhost:3003)//服务端运行
+tip:运行过程中遇到如下错误:Error: Cannot find module 'cors',则是cors模块没安装，安装如下:
+npm install cors 即可
+
 
 或者不打开第二个命令行窗口，直接使用我已经部署好的后台接口:
 http://119.23.17.221:3003/
