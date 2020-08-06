@@ -65,6 +65,20 @@ if( process.env.NODE_ENV === "development" ) {
 ## 功能说明
 - 请参考项目预览地址：> [在线演示地址](http://119.23.17.221:3004/)
 
+### 项目总结和项目优点
+```
+1.项目采用ducks的形式组织项目，containers项目为视图组件，redux目录为状态管理(action、reducer、selector)
+获取视图组件状态数据使用selector函数(如果有计算类的selector采用的reselect库减少计算),redux采用分模块，一个为全局模块，一个为局部模块
+2. 封装了原生fetch请求库(request.js),同时也封装了axios请求库(axiosRequest.js),
+3.组件采用React类组件，函数组件，React-Hook进行编写，同时使用了高阶组件对某部分组件进行封装，实现了一个动态加载组件(asyncComponent.js)，当然也可以直接使用react-loadable这个库，
+4.配置定制antd主题，路径别名等功能(具体可看config-overriders.js)
+5.同时使用内置的workbox-webpack-plugin插件对资源进行缓存，加快加载速度。
+tip:如果对React技术栈熟悉的也可以进行尝试借鉴，可能会启发新想法，不管新手或者熟练者都可以带给你一种新的思维方式，
+如果喜欢请给个star，因为你的支持会是写者的东西，谢谢。
+
+```
+
+
 ##### Tip
 ```
 在npm install or yarn install 的时候，请确保网络良好，如个别依赖安装不了，请设置淘宝镜像为安装源；
